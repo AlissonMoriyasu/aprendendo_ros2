@@ -1,0 +1,37 @@
+[1.154s] Invoking command in '/home/robot/ws_aprendendo_ros2/src/r2d2_spatial': PYTHONPATH=/home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/prefix_override:/home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/r2d2_spatial build --build-base /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build install --record /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/install.log --single-version-externally-managed
+[1.549s] running egg_info
+[1.550s] creating ../build/r2d2_spatial/r2d2_spatial.egg-info
+[1.551s] writing ../build/r2d2_spatial/r2d2_spatial.egg-info/PKG-INFO
+[1.552s] writing dependency_links to ../build/r2d2_spatial/r2d2_spatial.egg-info/dependency_links.txt
+[1.553s] writing entry points to ../build/r2d2_spatial/r2d2_spatial.egg-info/entry_points.txt
+[1.554s] writing requirements to ../build/r2d2_spatial/r2d2_spatial.egg-info/requires.txt
+[1.555s] writing top-level names to ../build/r2d2_spatial/r2d2_spatial.egg-info/top_level.txt
+[1.555s] writing manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+[1.558s] reading manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+[1.560s] writing manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+[1.560s] running build
+[1.561s] running build_py
+[1.562s] creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build
+[1.563s] creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib
+[1.564s] creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial
+[1.564s] copying r2d2_spatial/__init__.py -> /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial
+[1.565s] running install
+[1.566s] running install_lib
+[1.568s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial
+[1.568s] copying /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial/__init__.py -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial
+[1.569s] byte-compiling /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial/__init__.py to __init__.cpython-310.pyc
+[1.571s] running install_data
+[1.572s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index
+[1.573s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index
+[1.573s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index/packages
+[1.574s] copying resource/r2d2_spatial -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index/packages
+[1.575s] copying package.xml -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial
+[1.576s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+[1.576s] copying config/cartographer.lua -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+[1.578s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/launch
+[1.578s] copying launch/cartographer.launch.py -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/launch
+[1.579s] creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/rviz
+[1.580s] copying rviz/cartographer.rviz -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/rviz
+[1.581s] copying config/navigation.yaml -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+[1.582s] error: can't copy 'launch/navigation.launch.py': doesn't exist or not a regular file
+[1.604s] Invoked command in '/home/robot/ws_aprendendo_ros2/src/r2d2_spatial' returned '1': PYTHONPATH=/home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/prefix_override:/home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/r2d2_spatial build --build-base /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build install --record /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/install.log --single-version-externally-managed

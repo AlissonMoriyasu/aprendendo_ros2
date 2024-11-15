@@ -1,0 +1,19 @@
+[1.227s] Invoking command in '/home/robot/ws_aprendendo_ros2/src/r2d2_description': PYTHONPATH=/home/robot/ws_aprendendo_ros2/src/build/r2d2_description/prefix_override:/home/robot/ws_aprendendo_ros2/src/install/r2d2_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/r2d2_description build --build-base /home/robot/ws_aprendendo_ros2/src/build/r2d2_description/build install --record /home/robot/ws_aprendendo_ros2/src/build/r2d2_description/install.log --single-version-externally-managed
+[1.662s] running egg_info
+[1.665s] writing ../build/r2d2_description/r2d2_description.egg-info/PKG-INFO
+[1.666s] writing dependency_links to ../build/r2d2_description/r2d2_description.egg-info/dependency_links.txt
+[1.666s] writing entry points to ../build/r2d2_description/r2d2_description.egg-info/entry_points.txt
+[1.666s] writing requirements to ../build/r2d2_description/r2d2_description.egg-info/requires.txt
+[1.666s] writing top-level names to ../build/r2d2_description/r2d2_description.egg-info/top_level.txt
+[1.666s] reading manifest file '../build/r2d2_description/r2d2_description.egg-info/SOURCES.txt'
+[1.668s] writing manifest file '../build/r2d2_description/r2d2_description.egg-info/SOURCES.txt'
+[1.668s] running build
+[1.669s] running build_py
+[1.669s] running install
+[1.670s] running install_lib
+[1.671s] running install_data
+[1.672s] running install_egg_info
+[1.675s] removing '/home/robot/ws_aprendendo_ros2/src/install/r2d2_description/lib/python3.10/site-packages/r2d2_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.681s] Copying ../build/r2d2_description/r2d2_description.egg-info to /home/robot/ws_aprendendo_ros2/src/install/r2d2_description/lib/python3.10/site-packages/r2d2_description-0.0.0-py3.10.egg-info
+[1.682s] running install_scripts
+[1.699s] writing list of installed files to '/home/robot/ws_aprendendo_ros2/src/build/r2d2_description/install.log'

@@ -1,0 +1,335 @@
+<robot name="pi_robot">
+
+    <!-- * * * Link Definitions * * * -->
+
+    <!-- Base Link -->
+    <link name="base_link">
+        <inertial>
+            <mass value="7.072"/>
+            <inertia ixx="0.044096867" iyy="0.100186667" izz="0.064605667" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0.0425" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.32 0.26 0.085"/>
+            </geometry>
+            <material name="Cyan1">
+                <color rgba="0 0.9 0.9 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0.0425" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.32 0.26 0.085"/>
+            </geometry>
+            <material name="Cyan1">
+                <color rgba="0 0.9 0.9 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Base Laser -->
+    <link name="base_laser">
+        <inertial>
+            <mass value="0.059"/>
+            <inertia ixx="0.000013622" iyy="0.000018408" izz="0.000013622" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.025" length="0.03"/>
+            </geometry>
+            <material name="Black1">
+                <color rgba="0.2 0.2 0.2 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.025" length="0.03"/>
+            </geometry>
+            <material name="Black1">
+                <color rgba="0.2 0.2 0.2 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Torso Link -->
+    <link name="torso_link">
+        <inertial>
+            <mass value="2.592"/>
+            <inertia ixx="0.025140595" iyy="0.003239767" izz="0.025140595" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0.06" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.33"/>
+            </geometry>
+            <material name="Yellow2">
+                <color rgba="0.8 0.8 0 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0.06" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.33"/>
+            </geometry>
+            <material name="Yellow2">
+                <color rgba="0.8 0.8 0 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Head Pan Link -->
+    <link name="head_pan_link">
+        <inertial>
+            <mass value="0.101"/>
+            <inertia ixx="0.000034172" iyy="0.000038180" izz="0.000038180" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0.0225" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.045 0.045"/>
+            </geometry>
+            <material name="Green1">
+                <color rgba="0 1 0 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0.0225" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.05 0.045 0.045"/>
+            </geometry>
+            <material name="Green1">
+                <color rgba="0 1 0 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Neck Link -->
+    <link name="neck_link">
+        <inertial>
+            <mass value="0.063"/>
+            <inertia ixx="0.000022386" iyy="0.000017850" izz="0.000013986" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0.021" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.03 0.05 0.042"/>
+            </geometry>
+            <material name="Green3">
+                <color rgba="0.1 0.5 0.1 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0.021" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.03 0.05 0.042"/>
+            </geometry>
+            <material name="Green3">
+                <color rgba="0.1 0.5 0.1 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Head Link -->
+    <link name="head_link">
+        <inertial>
+            <mass value="0.231"/>
+            <inertia ixx="0.000327250" iyy="0.000111650" izz="0.000250250" ixy="0" ixz="0" iyz="0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.03 0.07 0.11"/>
+            </geometry>
+            <material name="Grey1">
+                <color rgba="0.9 0.9 0.9 1.0"/>
+            </material>
+        </visual>
+        <colision>
+            <origin xyz="0 0 0.025" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.03 0.07 0.11"/>
+            </geometry>
+            <material name="Grey1">
+                <color rgba="0.9 0.9 0.9 1.0"/>
+            </material>
+        </colision>
+    </link>
+
+    <!-- Front Left Wheel -->
+    <link name="front_left_wheel">
+      <inertial>
+          <mass value="0.462"/>
+          <inertia ixx="0.000600358" iyy="0.001131445" izz="0.000600358" ixy="0" ixz="0" iyz="0"/>
+      </inertial>
+      <visual>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      </visual>
+      <colision>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      </colision>
+	</link>
+    <!-- Front Right Wheel -->
+    <link name="front_right_wheel">
+        <inertial>
+          <mass value="0.462"/>
+          <inertia ixx="0.000600358" iyy="0.001131445" izz="0.000600358" ixy="0" ixz="0" iyz="0"/>
+      	</inertial>
+     	<visual>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</visual>
+        <colision>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</colision>
+    </link>
+
+    <!-- Rear Left Wheel -->
+    <link name="rear_left_wheel">
+        <inertial>
+          <mass value="0.462"/>
+          <inertia ixx="0.000600358" iyy="0.001131445" izz="0.000600358" ixy="0" ixz="0" iyz="0"/>
+     	</inertial>
+      	<visual>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</visual>
+        <colision>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</colision>
+    </link>
+
+    <!-- Rear Right Wheel -->
+    <link name="rear_right_wheel">
+        <inertial>
+          <mass value="0.462"/>
+          <inertia ixx="0.000600358" iyy="0.001131445" izz="0.000600358" ixy="0" ixz="0" iyz="0"/>
+     	</inertial>
+      	<visual>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</visual>
+        <colision>
+          <origin xyz="0 0 0" rpy="1.5708 0 0"/> <!-- Rotacionado 90 graus no eixo X -->
+          <geometry>
+              <cylinder radius="0.07" length="0.03"/>
+          </geometry>
+          <material name="Black_Wheel">
+              <color rgba="0 0 0 1.0"/>
+          </material>
+      	</colision>
+    </link>
+
+    <!-- * * * Joint Definitions * * * -->
+
+    <joint name="base_laser_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_laser"/>
+        <origin xyz="0.18 0 0.07" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="torso_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="torso_link"/>
+        <origin xyz="0 0 0.10" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="head_pan_servo" type="fixed">
+        <parent link="torso_link"/>
+        <child link="head_pan_link"/>
+        <origin xyz="0 0 0.225" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="head_tilt_joint" type="revolute">
+        <parent link="head_pan_link"/>
+        <child link="neck_link"/>
+        <origin xyz="0 0 0.04" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="3"/>
+    </joint>
+
+    <joint name="neck_joint" type="fixed">
+        <parent link="neck_link"/>
+        <child link="head_link"/>
+        <origin xyz="0.05 0 0.015" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Front Left Wheel Joint -->
+    <joint name="front_left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="front_left_wheel"/>
+        <origin xyz="0.09 0.14 0.0425" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- Front Right Wheel Joint -->
+    <joint name="front_right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="front_right_wheel"/>
+        <origin xyz="0.09 -0.14 0.0425" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- Rear Left Wheel Joint -->
+    <joint name="rear_left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_left_wheel"/>
+        <origin xyz="-0.09 0.14 0.0425" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <!-- Rear Right Wheel Joint -->
+    <joint name="rear_right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_right_wheel"/>
+        <origin xyz="-0.09 -0.14 0.0425" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+</robot>
+
+
+
+
+

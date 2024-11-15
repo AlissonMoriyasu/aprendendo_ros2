@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/r2d2_spatial/r2d2_spatial.egg-info
+writing ../build/r2d2_spatial/r2d2_spatial.egg-info/PKG-INFO
+writing dependency_links to ../build/r2d2_spatial/r2d2_spatial.egg-info/dependency_links.txt
+writing entry points to ../build/r2d2_spatial/r2d2_spatial.egg-info/entry_points.txt
+writing requirements to ../build/r2d2_spatial/r2d2_spatial.egg-info/requires.txt
+writing top-level names to ../build/r2d2_spatial/r2d2_spatial.egg-info/top_level.txt
+writing manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+reading manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+writing manifest file '../build/r2d2_spatial/r2d2_spatial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build
+creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib
+creating /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial
+copying r2d2_spatial/__init__.py -> /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial
+running install
+running install_lib
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial
+copying /home/robot/ws_aprendendo_ros2/src/build/r2d2_spatial/build/lib/r2d2_spatial/__init__.py -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial
+byte-compiling /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/lib/python3.10/site-packages/r2d2_spatial/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index/packages
+copying resource/r2d2_spatial -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/ament_index/resource_index/packages
+copying package.xml -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+copying config/cartographer.lua -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/launch
+copying launch/cartographer.launch.py -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/launch
+creating /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/rviz
+copying rviz/cartographer.rviz -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/rviz
+copying config/navigation.yaml -> /home/robot/ws_aprendendo_ros2/src/install/r2d2_spatial/share/r2d2_spatial/config
+error: can't copy 'launch/navigation.launch.py': doesn't exist or not a regular file
